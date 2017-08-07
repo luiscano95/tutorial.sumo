@@ -59,7 +59,7 @@ Paso 5: Crear un archivo llamado typemap.xml con las siguientes líneas de códi
 
 Esto permitirá crear los mapas de mejor manera, con el color del agua, de los edificios, de las pistas aéreas, etc.
 
-Paso 6: Copiar la ruta de el archivo randomTrips.py ubicado en la carpeta de herramientas del programa SUMO, debe estar con una ruta como:
+Paso 6: Copiar la ruta del archivo randomTrips.py ubicado en la carpeta de herramientas del programa SUMO, debe estar con una ruta como:
 
 ```
 /Users/Python/sumo-0.30.0/tools/randomTrips.py
