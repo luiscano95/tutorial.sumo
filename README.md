@@ -122,4 +122,4 @@ Para editar las señales como los semáforos:
 
 Para luego llegar a la simulación deseada.
 
-![alt text](Images/simulacion.png "Simulación final")
+![alt text](Images/sumo_callao_output.gif "Simulación final")
