@@ -4,7 +4,7 @@
 
 2) El archivo "callao.osm" es el mapa del puerto del callao descargado de OpenStreetMap.
 
-![alt text](https://github.com/luiscano95/tutorial.sumo/tree/master/Images/mapacallao.png")
+![alt text](https://github.com/luiscano95/tutorial.sumo/tree/master/SUMO/mapacallao.png")
 
 3) "callao.poly.xml" Son los polygonos creados para el mapa del callao.
 
@@ -16,4 +16,4 @@
 
 7) "typemap.xml" permite crear los mapas de mejor manera, representando los colores y formas de las diferentes zonas.
 
-![alt text](https://github.com/luiscano95/tutorial.sumo/tree/master/Images/simulacion.png)
+![alt text](https://github.com/luiscano95/tutorial.sumo/tree/master/SUMO/simulacion.png)
