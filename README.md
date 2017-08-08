@@ -1,7 +1,9 @@
-# Tutorial en español del programa SUMO
+# Guia en español del programa SUMO
 Este es un repositorio tutorial de cómo usar el programa de simulación del tránsito "SUMO" para representar cualquier mapa desde cualquier sistema unix, en este caso se usó como ejemplo el mapa del puerto del Callao ubicado en el Perú.
 
 Paso 1: Descargar data de OpenStreetMap y guardarlo como "<nombre_archivo>.osm"
+
+![alt text](Images/mapacallao.png "Mapa del puerto del Callao")
 
 Paso 2: Correr este código en la terminal, en la carpeta de trabajo.
 
@@ -103,3 +105,21 @@ sumo-gui -c <nombre_archivo>.sumo.cfg
 ```
 
 Paso 10: Modificar la interfaz a gusto con los botones específicos y cambiar la configuración de las señales de tránsito con la herramienta netedit que se puede acceder con el comando "ctrl + n" o mediante la barra de herramientas en "editar".
+
+![alt text](Images/netedit.png "Editor de mapa")
+
+Ahí accedes al editor que se debe ver como:
+
+![alt text](Images/semaforos.png "Editor de señales de tránsito")
+
+Luego utilizar la barra de herramientas:
+
+![alt text](Images/barra_herramientas.png "Barra de herramientas")
+
+Para editar las señales como los semáforos:
+
+![alt text](Images/editar_semaforo.png "Edición de señales")
+
+Para luego llegar a la simulación deseada.
+
+![alt text](Images/simulacion.png "Simulación final")
