@@ -13,15 +13,7 @@ netconvert --osm-files <nombre_archivo>.osm -o <nombre_archivo>.net.xml
 
 Esto permitirá obtener el archivo ".net" requerido para la simulación. (Netconvert importa redes de caminos o pistas digitales de diferentes fuentes y genera las redes de las autovías que se pueden usar por otras herramientas de este paquete)
 
-Paso 3: Agregar los "polygons" estas son las características del mapa en general (areas verdes, edificios, etc)
-
-```
-polyconvert --net-file <nombre_archivo>.net.xml --osm-files <nombre_archivo>.osm --type-file typemap.xml -o <nombre_archivo>.poly.xml
-```
-
-para que sean mostradas en la interfaz gráfica de sumo.
-
-Paso 5: Crear un archivo llamado typemap.xml con las siguientes líneas de código:
+Paso 3: Crear un archivo llamado typemap.xml con las siguientes líneas de código:
 
 ```
 <polygonTypes>
@@ -61,7 +53,16 @@ Paso 5: Crear un archivo llamado typemap.xml con las siguientes líneas de códi
 
 Esto permitirá crear los mapas de mejor manera, con el color del agua, de los edificios, de las pistas aéreas, etc.
 
-Paso 6: Copiar la ruta del archivo randomTrips.py ubicado en la carpeta de herramientas del programa SUMO, debe estar con una ruta como:
+
+Paso 4: Agregar los "polygons" estas son las características del mapa en general (areas verdes, edificios, etc)
+
+```
+polyconvert --net-file <nombre_archivo>.net.xml --osm-files <nombre_archivo>.osm --type-file typemap.xml -o <nombre_archivo>.poly.xml
+```
+
+para que sean mostradas en la interfaz gráfica de sumo.
+
+Paso 5: Copiar la ruta del archivo randomTrips.py ubicado en la carpeta de herramientas del programa SUMO, debe estar con una ruta como:
 
 ```
 /Users/Python/sumo-0.30.0/tools/randomTrips.py
@@ -69,7 +70,7 @@ Paso 6: Copiar la ruta del archivo randomTrips.py ubicado en la carpeta de herra
 
 para generar rutas aleatorias de los vehículos.
 
-Paso 7: Pegar la ruta en el terminal y agregar la siguiente linea de código
+Paso 6: Pegar la ruta en el terminal y agregar la siguiente linea de código
 
 ```
 /Users/Python/sumo-0.30.0/tools/randomTrips.py -n <nombre_archivo>.net.xml -r <nombre_archivo>.rou.xml -e 50 -l"
@@ -77,7 +78,7 @@ Paso 7: Pegar la ruta en el terminal y agregar la siguiente linea de código
 
 Esto es para generar rutas aleatorias en el mapa.
 
-Paso 8: Crear un archivo de configuración de sumo "<nombre_archivo>.sumo.cfg" con las siguientes líneas de código
+Paso 7: Crear un archivo de configuración de sumo "<nombre_archivo>.sumo.cfg" con las siguientes líneas de código
 
 
 ```
@@ -98,13 +99,13 @@ Paso 8: Crear un archivo de configuración de sumo "<nombre_archivo>.sumo.cfg" c
 
 Y cambiar la configuración al nombre del archivo correspondiente, es decir el nombre del mapa que se desea simular.
 
-Paso 9: Correr la interfaz gráfica de sumo en el terminal 
+Paso 8: Correr la interfaz gráfica de sumo en el terminal 
 
 ```
 sumo-gui -c <nombre_archivo>.sumo.cfg
 ```
 
-Paso 10: Modificar la interfaz a gusto con los botones específicos y cambiar la configuración de las señales de tránsito con la herramienta netedit que se puede acceder con el comando "ctrl + n" o mediante la barra de herramientas en "editar".
+Paso 9: Modificar la interfaz a gusto con los botones específicos y cambiar la configuración de las señales de tránsito con la herramienta netedit que se puede acceder con el comando "ctrl + n" o mediante la barra de herramientas en "editar".
 
 ![alt text](Images/netedit.png "Editor de mapa")
 
